@@ -15,7 +15,7 @@
 3. 连接器类元素<Connector>: port--指定服务器要监听的端口，并在这个端口监听来自客户端的请求。
 4. 容器类元素<Context>: 代表运行在虚拟主机上的单个web应用:
 > `<Context path="bbs" docBase="bbs" debug="0" reloadable="true"/>`
-> 1. path:指定访问该Web应用的URL入口.  
+> 1. path:指定访问该Web应用的URL入口.
 > 2. docBase:指定Web应用的文件路径，可以给定绝对路径，也可以给定相对于<Host>的appBase属性的相对路径，如果Web应用采用开放目录结构，则指定Web应用的根目录，如果Web应用是个war文件，则指定war文件的路径。
 >3. reloadable:如果这个属性设为true，tomcat服务器在运行状态下会监视在WEB-INF/classes和WEB-INF/lib目录下class文件的改动，如果监测到有class文件被更新的，服务器会自动重新加载Web应用。
 
@@ -57,8 +57,8 @@
 1. startup.bat 是tomcat的启动选项。
 2. catalina.bat 是tomcat的配置项，里面可以对tomcat的虚拟内存的大小等，startup.bat最后调用 catalina.bat run。
 3. CATALINA_HOME和CATALINA_BASE概念是为了解决这样的场景：
-> 你需要在一台机器上面部署多个Tomcat实例，但是你又不想创建多个Tomcat的副本，换句话说就是让这些Tomcat副本拥有自己的工作目录但是共享Tomcat的代码。  
-> **catalina.home(安装目录)**：指向公用信息的位置，就是bin和lib的父目录。  
+> 你需要在一台机器上面部署多个Tomcat实例，但是你又不想创建多个Tomcat的副本，换句话说就是让这些Tomcat副本拥有自己的工作目录但是共享Tomcat的代码。
+> **catalina.home(安装目录)**：指向公用信息的位置，就是bin和lib的父目录。
 > **catalina.base(工作目录)**：指向每个Tomcat目录私有信息的位置，就是conf、logs、temp、webapps和work的父目录。
 
 ---
@@ -84,7 +84,7 @@ reloadable="true" crossContext="true" />
 
  _在Tomcat默认安装后，tomcat的主目录是webapps/root目录，所以如果想改变tomcat的主目录的话可以如下所做:_
  > **方法一**：
- 打开C:/Tomcat/conf/server.xml，在<host></host>之间加入下面代码：  
+ 打开C:/Tomcat/conf/server.xml，在<host></host>之间加入下面代码：
  ```
  <Context docBase="d:/Tomcat 5.5/webapps/medi" path="" debug="0"  reloadable="true"/>
  ```
