@@ -37,7 +37,7 @@
 
 ---
 ### 备份插件
- > personal access token：4521e8dda8479bbbb893d8b467c07d4ec80a2e9c
+ > personal access token：4521e8dda8479bbbb893d8b467c07d4ec80a2e9c  
  > gist id：7336b27f5767197b72fb3745c031b25f
 ```
 sync-settings:backup – 这条命令是备份当前的配置
